@@ -1,2 +1,51 @@
+
+@import 'reset'; 
+@import 'colors'; 
+@import 'fonts'; 
+
 body
-    background: blue;
+    background: $diner-red;
+
+header
+    background: url('../../assets/img/bgtexture.jpg') repeat-x 0 0;
+    overflow: hidden;
+    .wrapper
+        width: 90%;
+        margin: 0 auto;
+        .logo
+            color: $diner-red;
+            //transform: rotate(-25deg);
+            //width: 245px;
+            //margin: 45px 0 0 0;
+            //padding: 120px 0px;
+            //border-radius: 200px;
+            //border: 1px solid #670101;
+            //box-sizing: border-box;
+            //background: #fff;
+            //position: relative;
+
+            .tagline
+                font-family: 'Vast Shadow', cursive;
+                color: #333;
+                position: absolute;
+                top: 36.5%;
+                left: 6%;
+                border-top: 1px solid;
+                width: 87%;
+                border-bottom: 1px solid;
+            h1
+                font-family: 'Bungee Inline', cursive;
+                font-size: 20pt;
+                text-shadow: 1px 0px #333;
+                position: absolute;
+                width: 270px;
+                left: 5%;
+                top: 45%;
+            .slogan
+                font-family: 'Source Sans Pro', sans-serif;
+                text-align: center;
+                color: #333;
+                position: absolute;
+                font-size: 11pt;
+                bottom: 93px;
+                left: 6%;

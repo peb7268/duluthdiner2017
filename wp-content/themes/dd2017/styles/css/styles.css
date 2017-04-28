@@ -1,2 +1,84 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Source+Sans+Pro:300,400,600,700,900|Vast+Shadow");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+		display: block; }
+
 body {
-		background: blue; }
+		line-height: 1; }
+
+ol, ul {
+		list-style: none; }
+
+blockquote, q {
+		quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+		content: '';
+		content: none; }
+
+table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+body {
+		background: #c30202; }
+
+header {
+		background: url("../../assets/img/bgtexture.jpg") repeat-x 0 0;
+		overflow: hidden; }
+		header .wrapper {
+				width: 90%;
+				margin: 0 auto; }
+				header .wrapper .logo {
+						color: #c30202; }
+						header .wrapper .logo .tagline {
+								font-family: 'Vast Shadow', cursive;
+								color: #333;
+								position: absolute;
+								top: 36.5%;
+								left: 6%;
+								border-top: 1px solid;
+								width: 87%;
+								border-bottom: 1px solid; }
+						header .wrapper .logo h1 {
+								font-family: 'Bungee Inline', cursive;
+								font-size: 20pt;
+								text-shadow: 1px 0px #333;
+								position: absolute;
+								width: 270px;
+								left: 5%;
+								top: 45%; }
+						header .wrapper .logo .slogan {
+								font-family: 'Source Sans Pro', sans-serif;
+								text-align: center;
+								color: #333;
+								position: absolute;
+								font-size: 11pt;
+								bottom: 93px;
+								left: 6%; }
