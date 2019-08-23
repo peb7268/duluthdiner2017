@@ -156,6 +156,28 @@ footer
     padding-left: 25px;
     margin: 15px 0;
 
+.list-arrows
+    margin: 15px 0;
+    li
+        display: flex;
+        align-items: center;
+        i
+            font-size: 9pt;
+            margin: 0 5px 0 0;
+.social-row
+    display: flex;
+    & > a
+        background: #343343;
+        color: #fff;
+        padding: 10px;
+        text-decoration: none;
+        margin: 0 0.5vw 0 0;
+        min-width: 25px;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+        font-size: 14pt;
+
 .cta, .menu-wrapper
     margin-top: 165px;
     .wrapper
@@ -182,6 +204,27 @@ footer
 .flex-col
     flex-direction: column; 
 
+.page-banner
+        position: relative;
+        height: 275px;
+        overflow: hidden;
+        margin: 0 auto 15px;
+        width: 100%;
+        .message
+            position: absolute;
+            width: 100%;
+            top: 40%;
+            left: 5%;
+            z-index: 20000;
+            h1, p
+                text-align: center;
+                color: #fff;
+            h1
+                font-size: 34pt;
+            p
+                font-size: 16pt;
+                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+
 //Home Page
 .home.cta
     .sidebar
@@ -204,7 +247,7 @@ footer
             & .block > div
                 margin: 0 0 20px;
                 &.specials
-                    margin: 70px 0 20px 0;
+                    margin: 40px 0 20px 0;
             h2
                 //font-family: 'Vast Shadow', cursive;
                 font-family: 'Roboto Slab', serif;
@@ -234,7 +277,7 @@ footer
                 ul
                     display: flex;
                     li
-                        margin: 0 5px 0 0;
+                        margin: 5px 0.5vw 0 0;
                         a
                             font-size: 18pt;
                             color: hsla(60, 0%, 83%, 1);
@@ -458,6 +501,8 @@ footer
 body .page, .menu-wrapper
     display: flex;
     justify-content: space-between;
+    .single-banner
+        min-height: 255px;
     .content, .sidebar
         padding: 10px 20px;
         box-sizing: border-box;
@@ -467,47 +512,31 @@ body .page, .menu-wrapper
         min-height: 500px;
         &.no-sidebar
             width: 100%;
-            padding: 15px 50px 40px;
+            padding: 0;
+        .title
+            padding: 0 2vw;
+        .post-body
+            padding: 0 2vw 2vw;
     .sidebar
         width: 20%;
 
-.page-template-tpl-no-sidebar
+.page-template-tpl-no-sidebar, .single-post
     background: #343343;
     .wrapper.page
-        margin-top: 195px;
+        margin: 195px auto 100px;
 
 //Contact Page
 body.page.page-id-59
     .wrapper.page
         margin: 175px auto 100px;
     .content.no-sidebar
-       padding: 10px 0 50px;
-    .page-banner
-        position: relative;
-        height: 275px;
-        overflow: hidden;
-        border: 10px solid #fff;
-        margin: 0 auto 15px;
-        width: 97%;
-        .message
-            position: absolute;
-            width: 100%;
-            top: 40%;
-            left: 5%;
-            z-index: 20000;
-            h1, p
-                text-align: center;
-                color: #fff;
-            h1
-                font-size: 34pt;
-            p
-                font-size: 16pt;
-                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+       padding: 0 0 50px;
     .contact-wrapper
         display: flex;
         justify-content: space-between;
+        padding: 0 1vw;
         .left, .right
-            width: 49%;
+            width: 48%;
     .right
         .section-header
             text-transform: capitalize;
@@ -515,6 +544,7 @@ body.page.page-id-59
                 color: #777;
                 font-weight: 100;
     .review-us
+        width: 65%;
         & > div 
             margin: 0 0 10px;
             a
@@ -522,13 +552,13 @@ body.page.page-id-59
                 align-items: center;
                 text-decoration: none;
                 color: #fff;
-                font-size: 1.8vw;
-                padding: 1.3vh 2% 1vh;
+                font-size: 1.7vw;
+                padding: 1.3vh 1vw 1vh;
                 text-transform: capitalize;
                 font-weight: 900;
                 i
                     font-size: 2.7vw;
-                    margin-right: 5px;
+                    margin-right: 15px;
                     min-width: 35px;
         .next-door
             background: #00B246;
@@ -567,7 +597,11 @@ body.page.page-id-59
             padding: 0;
         .post
             padding: 0 2.5vw;
-
+            .post-header
+                display: flex;
+                margin: 25px 0;
+                .title
+                    margin: 0px 1vw 0 0;
 //Blog
 .wrapper.blog
     display: flex;
@@ -595,6 +629,7 @@ body.page.page-id-59
             flex-direction: column;
             margin: 0 1px 1px 0;
             width: 275px;
+            min-height: 275px;
             position: relative;
             overflow: hidden;
             &:hover
@@ -638,6 +673,16 @@ body.page.page-id-59
                 width: 100%;
                 padding: 25px;
                 box-sizing: border-box;
+                color: #000;
+                .nav
+                    margin: 10px 0;
+                    a
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: bold;
+                .inner
+                    position: relative;
+                    z-index: 30;
 
     aside
         width: 28%;

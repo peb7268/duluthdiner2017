@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/dd2017/styles/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <script src="https://kit.fontawesome.com/e9ffebb96f.js"></script>
     <script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 </head>
 <body <?php body_class(); ?>>

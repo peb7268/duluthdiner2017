@@ -32,17 +32,23 @@
                         <ul>
                             <li class="facebook">
                                 <a href="#facebook">
-                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    <i class="fab fa-facebook" aria-hidden="true"></i>
                                 </a>
                             </li>
-                            <li class="twitter">
-                                <a href="#twitter">
-                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            <li class="instagram">
+                                <a href="#instagram">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li class="google">
                                 <a href="#google">
-                                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                                    <i class="fab fa-google" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="nextdoor">
+                                 <a href="https://nextdoor.com/pages/duluth-diner-duluth-ga?init_source=copy_link_share" target="_blank" rel="noopener noreferrer" title="nextdoor">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
                                 </a>
                             </li>
                         </ul>

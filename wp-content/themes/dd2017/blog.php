@@ -9,10 +9,7 @@
                 <div class="recent_specials banner">
                     <h2><span></span>Recent Specials<span></span></h2>
                     <ul class="posts">
-                        <li><a href="#"><i class="fa fa-caret-right"></i>Some awesome post title here</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right"></i>Some awesome post title here</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right"></i>Some awesome post title here</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right"></i>Some awesome post title here</a></li>
+                         <?php get_template_part('partials/loops/specials'); ?>
                     </ul>
                 </div>
 
@@ -20,9 +17,7 @@
                     <h2>
                         <span></span>Reccomend Us<span></span>
                     </h2>
-                    <p>
-                        Social media stuff here
-                    </p>
+                    <?php get_template_part('partials/social-row'); ?>
                 </div>
             </aside>
         </div>   

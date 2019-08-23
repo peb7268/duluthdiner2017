@@ -16,8 +16,8 @@
         </div>
     </footer>
 
-    <script type"text/javascript" src="wp-content/themes/dd2017/node_modules/jquery/dist/jquery.min.js"></script>
-    <script type"text/javascript" src="wp-content/themes/dd2017/node_modules/rx/dist/rx.all.js"></script>
-    <script type"text/javascript" src="wp-content/themes/dd2017/js/global.js"></script>
+    <script type"text/javascript" src="http://duluthdiner.com/wp-content/themes/dd2017/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type"text/javascript" src="http://duluthdiner.com/wp-content/themes/dd2017/node_modules/rx/dist/rx.all.js"></script>
+    <script type"text/javascript" src="http://duluthdiner.com/wp-content/themes/dd2017/js/global.js"></script>
 </body>
 </html>
