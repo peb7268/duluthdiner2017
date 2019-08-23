@@ -1,0 +1,839 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Source+Sans+Pro:300,400,600,700,900|Vast+Shadow|Sacramento|Roboto+Slab|Open+Sans:700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+		display: block; }
+
+body {
+		line-height: 1; }
+
+ol, ul {
+		list-style: none; }
+
+blockquote, q {
+		quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+		content: '';
+		content: none; }
+
+table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+body, div, a, html, p, h1, h2, h3, h4, span {
+		font-family: 'Source Sans Pro', sans-serif;
+		-webkit-font-smoothing: antialiased; }
+
+body {
+		background: #c30202; }
+
+.wrapper {
+		max-width: 1200px;
+		width: 95%;
+		margin: 0 auto; }
+
+header {
+		background: url("../../assets/img/bgtexture.jpg") repeat-x 0 0;
+		border-bottom: 1px solid #4c0101;
+		display: flex;
+		padding: 30px 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100; }
+		header .wrapper {
+				width: 95%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center; }
+				header .wrapper .logo {
+						color: #c30202;
+						width: 325px;
+						min-height: 78px;
+						text-decoration: none; }
+						header .wrapper .logo .tagline {
+								font-family: 'Vast Shadow', cursive;
+								color: #333;
+								border-top: 1px solid;
+								border-bottom: 1px solid;
+								margin: 0 0 2px 0;
+								text-align: center; }
+						header .wrapper .logo h1 {
+								font-family: 'Bungee Inline', cursive;
+								font-size: 30pt;
+								text-shadow: 1px 0px #333;
+								margin: 0 0 -8px 0; }
+						header .wrapper .logo .slogan {
+								font-family: 'Sacramento', cursive;
+								text-align: center;
+								color: #333;
+								font-size: 20pt;
+								padding: 0 0 0 10px; }
+								header .wrapper .logo .slogan > span {
+										font-size: 14pt; }
+				header .wrapper .nav {
+						display: flex;
+						justify-content: space-between;
+						margin: 0; }
+						header .wrapper .nav li {
+								margin: 0 10px 0 0; }
+								header .wrapper .nav li a {
+										color: #c30202;
+										font-family: 'Source Sans Pro', sans-serif;
+										text-decoration: none;
+										font-weight: 100;
+										font-size: 15pt; }
+		header .band {
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: #c30202;
+				width: 100%;
+				min-height: 20px;
+				color: #fff;
+				border-bottom: 1px solid #4c0101;
+				display: none; }
+				header .band .wrapper a.phone {
+						color: #fff;
+						text-decoration: none;
+						position: absolute;
+						right: 5%; }
+
+footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		display: block;
+		min-height: 30px;
+		background: #1f1f1f;
+		color: #f8f7f2;
+		z-index: 9999; }
+		footer .wrapper {
+				box-sizing: border-box;
+				padding: 6px 0 5px;
+				display: flex;
+				justify-content: space-between; }
+				footer .wrapper .contact_info a {
+						text-decoration: none;
+						color: #fff;
+						margin: 0 10px 0 0; }
+						footer .wrapper .contact_info a.location {
+								color: #dc4a3d; }
+				footer .wrapper a.phone {
+						color: #fff;
+						text-decoration: none; }
+
+.title {
+		font-size: 24pt;
+		font-family: Roboto Slab;
+		margin: 25px 0 15px; }
+
+.section-header {
+		font-size: 17pt;
+		color: #111;
+		margin: 30px 0 7px; }
+		.section-header.first {
+				margin-top: 20px; }
+
+.content .tagline {
+		padding: 30px 20px 25px;
+		font-family: 'Roboto Slab', serif;
+		font-size: 24pt;
+		text-align: center; }
+		.content .tagline.green {
+				border: 1px solid #366736;
+				background: #47bb47;
+				color: #fff; }
+
+.content, .content p {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 14pt;
+		line-height: 1.2;
+		color: #343434; }
+
+.content p {
+		margin: 0 0 7px; }
+
+.dots {
+		list-style: disc;
+		padding-left: 25px;
+		margin: 15px 0; }
+
+.cta, .menu-wrapper {
+		margin-top: 165px; }
+		.cta .wrapper, .menu-wrapper .wrapper {
+				width: 95%;
+				margin: 25px auto;
+				display: flex; }
+
+.shade {
+		width: 100%;
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		height: 100%; }
+		.shade.radial {
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+				background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+				/* FF3.6-15 */
+				background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+				/* Chrome10-25,Safari5.1-6 */
+				background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+				/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
+				/* IE6-9 fallback on horizontal gradient */ }
+
+.m-t-0 {
+		margin-top: 0; }
+
+.flex-col {
+		flex-direction: column; }
+
+.home.cta .sidebar {
+		background: url("../../assets/img/wood_texture_final.jpg") repeat-x 0 0;
+		height: 445px;
+		width: 30%;
+		box-shadow: 1px 0px 2px #000;
+		z-index: 10;
+		padding: 25px 40px;
+		box-sizing: border-box;
+		min-width: 325px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; }
+		.home.cta .sidebar div, .home.cta .sidebar h2, .home.cta .sidebar p, .home.cta .sidebar a {
+				color: rgba(237, 237, 237, 0.9); }
+		.home.cta .sidebar a {
+				text-decoration: none; }
+		.home.cta .sidebar .block > div {
+				margin: 0 0 20px; }
+				.home.cta .sidebar .block > div.specials {
+						margin: 70px 0 20px 0; }
+		.home.cta .sidebar h2 {
+				font-family: 'Roboto Slab', serif;
+				color: rgba(231, 231, 228, 0.9);
+				font-size: 19pt;
+				margin: 0 0 4px 0; }
+		.home.cta .sidebar .block > h2:first-child {
+				text-transform: capitalize;
+				font-weight: bold;
+				font-size: 32pt;
+				border-bottom: 1px solid #eee;
+				padding: 0 0 10px; }
+				.home.cta .sidebar .block > h2:first-child span {
+						font-weight: 100;
+						-webkit-font-smoothing: antialiased;
+						font-size: 10pt;
+						display: block;
+						text-transform: uppercase; }
+		.home.cta .sidebar p {
+				-webkit-font-smoothing: antialiased;
+				padding: 0 0 0 5px;
+				color: #eee; }
+				.home.cta .sidebar p i {
+						padding: 0 5px 0 0; }
+		.home.cta .sidebar .social_media ul {
+				display: flex; }
+				.home.cta .sidebar .social_media ul li {
+						margin: 0 5px 0 0; }
+						.home.cta .sidebar .social_media ul li a {
+								font-size: 18pt;
+								color: #d4d4d4; }
+
+.home.cta .canvas {
+		height: 400px;
+		background: #fff;
+		width: 70%;
+		display: block;
+		position: relative;
+		margin: 25px 0 0 0;
+		z-index: 5;
+		border-radius: 0 5px 5px 0;
+		border: 1px solid #4c0101;
+		background: url("../../assets/img/greek_salad.jpg") no-repeat 0 0;
+		background-size: 100%; }
+
+.home.banner.one {
+		margin-bottom: 25px; }
+		.home.banner.one .wrapper {
+				display: flex;
+				justify-content: space-between; }
+				.home.banner.one .wrapper .container {
+						position: relative; }
+				.home.banner.one .wrapper .container.one {
+						display: flex;
+						justify-content: space-between;
+						width: 50%;
+						padding: 0 5px;
+						box-sizing: border-box;
+						background: transparent url(../../assets/img/bgtexture.jpg) repeat-x 0 0;
+						min-height: 250px; }
+						.home.banner.one .wrapper .container.one h4 {
+								font-family: 'Roboto Slab', serif;
+								color: #403400;
+								font-size: 16pt;
+								text-align: center; }
+						.home.banner.one .wrapper .container.one div:first-child .backdrop {
+								background: transparent url(../../assets/img/breakfast_web2.png) no-repeat bottom center;
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								z-index: 0; }
+						.home.banner.one .wrapper .container.one div:first-child a {
+								color: #fff;
+								text-decoration: none;
+								font-weight: 100;
+								display: block;
+								text-align: center;
+								background: #007622;
+								border: 1px solid #00330e;
+								margin: 4px auto;
+								z-index: 10;
+								position: relative;
+								border-radius: 4px;
+								padding: 3px 8px;
+								font-size: 9pt;
+								width: 100px; }
+						.home.banner.one .wrapper .container.one div:first-child h4 {
+								font-family: 'Source Sans Pro', sans-serif;
+								text-transform: capitalize;
+								font-weight: 100; }
+								.home.banner.one .wrapper .container.one div:first-child h4 span {
+										display: block;
+										font-family: 'Roboto Slab', serif;
+										font-size: 18pt; }
+						.home.banner.one .wrapper .container.one div:nth-child(2) h4 {
+								font-size: 18pt; }
+								.home.banner.one .wrapper .container.one div:nth-child(2) h4 span {
+										font-family: 'Source Sans Pro', sans-serif;
+										text-transform: capitalize;
+										font-weight: 100;
+										text-align: center;
+										display: block;
+										font-size: 16pt; }
+						.home.banner.one .wrapper .container.one div:nth-child(2) .backdrop {
+								background: transparent url(../../assets/img/lunch_web.png) no-repeat 50% 80px;
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								z-index: 0;
+								background-size: 70%; }
+						.home.banner.one .wrapper .container.one div:nth-child(2) a {
+								color: #fff;
+								text-decoration: none;
+								font-weight: 100;
+								display: block;
+								text-align: center;
+								background: #F65B1B;
+								border: 1px solid #bc4515;
+								margin: 4px auto;
+								z-index: 10;
+								position: relative;
+								border-radius: 4px;
+								padding: 3px 8px;
+								font-size: 9pt;
+								width: 100px; }
+						.home.banner.one .wrapper .container.one > div {
+								width: 50%;
+								margin: 0 10px 0 0;
+								padding: 20px 5px;
+								border-right: 1px dotted;
+								position: relative; }
+						.home.banner.one .wrapper .container.one > div:last-child {
+								border-right: 0;
+								margin-right: 0; }
+				.home.banner.one .wrapper .container.two, .home.banner.one .wrapper .container.three {
+						width: 24%; }
+				.home.banner.one .wrapper .container.two {
+						background: black url(../../assets/img/ubereats_banner.jpg) no-repeat top center;
+						margin: 0 1%;
+						position: relative; }
+						.home.banner.one .wrapper .container.two a {
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%; }
+				.home.banner.one .wrapper .container.three {
+						position: relative;
+						background: #fff; }
+						.home.banner.one .wrapper .container.three .backdrop {
+								background: url(../../assets/img/chafing_dish.png) -90px 60px no-repeat;
+								background-size: 100%;
+								position: absolute;
+								left: 0;
+								top: 0;
+								height: 100%;
+								width: 100%;
+								z-index: 1;
+								opacity: .3; }
+						.home.banner.one .wrapper .container.three h2, .home.banner.one .wrapper .container.three a, .home.banner.one .wrapper .container.three p {
+								position: relative;
+								display: block;
+								z-index: 5; }
+						.home.banner.one .wrapper .container.three h2 {
+								background: #72bb0c;
+								border-top: 1px solid #599407;
+								border-bottom: 1px solid #599407;
+								color: #fff;
+								font-family: 'Roboto Slab', serif;
+								margin: 15px 0 10px;
+								padding: 10px;
+								text-align: center;
+								font-size: 15pt; }
+						.home.banner.one .wrapper .container.three a.btn {
+								position: absolute;
+								bottom: 15px;
+								right: 15px;
+								display: block;
+								color: #fff;
+								text-decoration: none;
+								padding: 10px 20px;
+								border: 1px solid #105d89;
+								box-shadow: 0px 0px 5px #999;
+								/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1578b2+0,188acc+45,1578b2+98 */
+								background: #1578b2;
+								/* Old browsers */
+								background: -moz-linear-gradient(top, #1578b2 0%, #188acc 45%, #1578b2 98%);
+								/* FF3.6-15 */
+								background: -webkit-linear-gradient(top, #1578b2 0%, #188acc 45%, #1578b2 98%);
+								/* Chrome10-25,Safari5.1-6 */
+								background: linear-gradient(to bottom, #1578b2 0%, #188acc 45%, #1578b2 98%);
+								/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1578b2', endColorstr='#1578b2',GradientType=0 );
+								/* IE6-9 */ }
+								.home.banner.one .wrapper .container.three a.btn i {
+										margin: 0 0 0 10px;
+										color: #fff; }
+						.home.banner.one .wrapper .container.three p {
+								text-align: right;
+								color: #333;
+								font-weight: 100;
+								padding: 0 10px 0 0; }
+
+.home.banner.two {
+		margin-bottom: 90px; }
+		.home.banner.two .wrapper {
+				background: #e4e5e7;
+				min-height: 100px;
+				padding: 40px 20px 0;
+				box-sizing: border-box;
+				position: relative; }
+				.home.banner.two .wrapper span.quote {
+						font-family: 'Vast Shadow', cursive;
+						position: absolute;
+						top: 10px;
+						font-size: 40pt; }
+						.home.banner.two .wrapper span.quote.one {
+								left: 10px; }
+						.home.banner.two .wrapper span.quote.two {
+								right: 10px; }
+				.home.banner.two .wrapper .testimonial {
+						width: 92%;
+						margin: 0 auto; }
+						.home.banner.two .wrapper .testimonial .text {
+								color: #105d89;
+								margin: -15px 0 0 0;
+								font-weight: 100;
+								font-size: 20pt; }
+						.home.banner.two .wrapper .testimonial .name {
+								text-align: right;
+								margin: -5px 0 0 0; }
+
+body .page, .menu-wrapper {
+		display: flex;
+		justify-content: space-between; }
+		body .page .content, body .page .sidebar, .menu-wrapper .content, .menu-wrapper .sidebar {
+				padding: 10px 20px;
+				box-sizing: border-box; }
+		body .page .content, .menu-wrapper .content {
+				background: #e4e5e7;
+				width: 79%;
+				min-height: 500px; }
+				body .page .content.no-sidebar, .menu-wrapper .content.no-sidebar {
+						width: 100%;
+						padding: 15px 50px 40px; }
+		body .page .sidebar, .menu-wrapper .sidebar {
+				width: 20%; }
+
+.page-template-tpl-no-sidebar {
+		background: #343343; }
+		.page-template-tpl-no-sidebar .wrapper.page {
+				margin-top: 195px; }
+
+body.page.page-id-59 .wrapper.page {
+		margin: 175px auto 100px; }
+
+body.page.page-id-59 .content.no-sidebar {
+		padding: 10px 0 50px; }
+
+body.page.page-id-59 .page-banner {
+		position: relative;
+		height: 275px;
+		overflow: hidden;
+		border: 10px solid #fff;
+		margin: 0 auto 15px;
+		width: 97%; }
+		body.page.page-id-59 .page-banner .message {
+				position: absolute;
+				width: 100%;
+				top: 40%;
+				left: 5%;
+				z-index: 20000; }
+				body.page.page-id-59 .page-banner .message h1, body.page.page-id-59 .page-banner .message p {
+						text-align: center;
+						color: #fff; }
+				body.page.page-id-59 .page-banner .message h1 {
+						font-size: 34pt; }
+				body.page.page-id-59 .page-banner .message p {
+						font-size: 16pt;
+						text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4); }
+
+body.page.page-id-59 .contact-wrapper {
+		display: flex;
+		justify-content: space-between; }
+		body.page.page-id-59 .contact-wrapper .left, body.page.page-id-59 .contact-wrapper .right {
+				width: 49%; }
+
+body.page.page-id-59 .right .section-header {
+		text-transform: capitalize; }
+		body.page.page-id-59 .right .section-header span {
+				color: #777;
+				font-weight: 100; }
+
+body.page.page-id-59 .review-us > div {
+		margin: 0 0 10px; }
+		body.page.page-id-59 .review-us > div a {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				color: #fff;
+				font-size: 1.8vw;
+				padding: 1.3vh 2% 1vh;
+				text-transform: capitalize;
+				font-weight: 900; }
+				body.page.page-id-59 .review-us > div a i {
+						font-size: 2.7vw;
+						margin-right: 5px;
+						min-width: 35px; }
+
+body.page.page-id-59 .review-us .next-door {
+		background: #00B246; }
+		body.page.page-id-59 .review-us .next-door span {
+				font-weight: 100;
+				padding-left: 5px; }
+
+body.page.page-id-59 .review-us .google {
+		background: #f6504e; }
+
+body.page.page-id-59 .social {
+		display: flex; }
+		body.page.page-id-59 .social .social-wrapper {
+				display: flex;
+				align-items: flex-start; }
+				body.page.page-id-59 .social .social-wrapper > div {
+						display: flex;
+						align-items: center;
+						margin: 0 1% 0 0; }
+						body.page.page-id-59 .social .social-wrapper > div i {
+								min-width: 25px;
+								display: flex;
+								align-items: baseline;
+								justify-content: center;
+								margin: 2px 0 0 0; }
+				body.page.page-id-59 .social .social-wrapper .social-circle-border {
+						background: #353343;
+						color: #fff;
+						padding: 1vh;
+						border-radius: 50%;
+						font-size: 18pt;
+						text-decoration: none; }
+
+.single .wrapper.page {
+		margin-top: 175px; }
+		.single .wrapper.page .content {
+				padding: 0; }
+		.single .wrapper.page .post {
+				padding: 0 2.5vw; }
+
+.wrapper.blog {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background: #f7f6f1;
+		width: 90%;
+		height: 78%;
+		margin: 175px auto 75px;
+		border-right: 1px solid #6f0000;
+		border-left: 1px solid #6f0000;
+		border-bottom: 1px solid #6f0000;
+		box-shadow: 0px 1px 4px rgba(51, 51, 51, 0.1); }
+		.wrapper.blog section.posts {
+				width: 77%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: stretch;
+				flex-grow: 1;
+				flex-shrink: 1; }
+				.wrapper.blog section.posts .post {
+						flex-grow: 0;
+						flex-shrink: 1;
+						display: flex;
+						flex-direction: column;
+						margin: 0 1px 1px 0;
+						width: 275px;
+						position: relative;
+						overflow: hidden; }
+						.wrapper.blog section.posts .post:hover {
+								cursor: pointer; }
+								.wrapper.blog section.posts .post:hover .preview {
+										opacity: 0;
+										height: 100%; }
+								.wrapper.blog section.posts .post:hover .content {
+										height: 100%;
+										opacity: 1; }
+								.wrapper.blog section.posts .post:hover > img {
+										opacity: .7; }
+						.wrapper.blog section.posts .post img {
+								background: #333;
+								width: 100%;
+								height: 100%; }
+						.wrapper.blog section.posts .post .preview {
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								background: rgba(0, 0, 0, 0.7);
+								width: 100%;
+								color: #fff;
+								height: 75px;
+								display: flex;
+								align-items: center;
+								padding: 0 5%;
+								line-height: 1.2;
+								opacity: 1;
+								transition: all 250ms ease-in; }
+						.wrapper.blog section.posts .post .content {
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								height: 0;
+								opacity: 0;
+								transition: all 250ms ease-in;
+								width: 100%;
+								padding: 25px;
+								box-sizing: border-box; }
+		.wrapper.blog aside {
+				width: 28%;
+				min-width: 280px; }
+				.wrapper.blog aside .banner {
+						margin: 0 0 25px; }
+						.wrapper.blog aside .banner h2 {
+								font-size: 15pt;
+								font-family: 'Roboto Slab', serif;
+								color: #c30202;
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+								margin: 0 0 7px; }
+								.wrapper.blog aside .banner h2 span {
+										border-top: 1px solid #c30202;
+										width: 18%; }
+						.wrapper.blog aside .banner .posts {
+								padding: 0 0 0 7px; }
+								.wrapper.blog aside .banner .posts li {
+										list-style: none;
+										margin: 0 0 4px; }
+										.wrapper.blog aside .banner .posts li a {
+												display: block;
+												text-decoration: none;
+												color: #444;
+												line-height: 1.2;
+												font-size: 11pt;
+												transition: all 400ms; }
+												.wrapper.blog aside .banner .posts li a:hover {
+														color: #000;
+														font-size: 13pt;
+														margin: -1px 0 1px 0; }
+												.wrapper.blog aside .banner .posts li a i {
+														margin: 0 7px 0 0;
+														font-size: 10pt; }
+		.wrapper.blog aside, .wrapper.blog section.posts {
+				padding: 20px;
+				box-sizing: border-box; }
+
+.page-template-menu .menu-wrapper > .menu {
+		width: 100%;
+		max-width: 1400px;
+		min-height: 550px;
+		display: flex;
+		justify-content: space-between;
+		padding: 10px; }
+
+.page-template-menu .menu-wrapper .menu-sidebar, .page-template-menu .menu-wrapper .menu-selection {
+		box-sizing: border-box;
+		padding: 10px;
+		color: #fff; }
+
+.page-template-menu .menu-wrapper .menu-sidebar {
+		background: #aba69b;
+		width: 25%;
+		padding: 0; }
+		.page-template-menu .menu-wrapper .menu-sidebar > div {
+				display: flex;
+				flex-direction: column;
+				height: 100%; }
+				.page-template-menu .menu-wrapper .menu-sidebar > div .menu {
+						display: flex;
+						flex-direction: column;
+						height: 100%;
+						justify-content: flex-start;
+						padding: 0;
+						background: #1f1f1f; }
+						.page-template-menu .menu-wrapper .menu-sidebar > div .menu li {
+								margin: 0;
+								border-top: 1px solid #aba69b; }
+								.page-template-menu .menu-wrapper .menu-sidebar > div .menu li a {
+										display: block;
+										width: 100%;
+										padding: 15px 0;
+										color: #aba69b;
+										text-decoration: none;
+										font-size: 20pt;
+										letter-spacing: -2px;
+										text-align: center;
+										font-weight: bold;
+										text-transform: uppercase;
+										font-family: 'Open Sans', sans-serif; }
+										.page-template-menu .menu-wrapper .menu-sidebar > div .menu li a:hover {
+												background: #aba69b;
+												color: #1f1f1f;
+												cursor: pointer; }
+						.page-template-menu .menu-wrapper .menu-sidebar > div .menu li.current-menu-item a {
+								background: #aba69b;
+								color: #1f1f1f; }
+
+.page-template-menu .menu-wrapper .menu-selection {
+		width: 75%;
+		background: #aba69b; }
+		.page-template-menu .menu-wrapper .menu-selection .banner {
+				width: 100%; }
+				.page-template-menu .menu-wrapper .menu-selection .banner img {
+						max-width: 100%;
+						border: 1px solid #1f1f1f; }
+		.page-template-menu .menu-wrapper .menu-selection .menu-banner {
+				min-height: 275px;
+				background: #1f1f1f;
+				margin: 0 0 10px; }
+		.page-template-menu .menu-wrapper .menu-selection .menu-banner-cta {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				background: url("http://dev.duluthdiner.com/wp-content/themes/dd2017/assets/ctas/dd-menu-home-cta.png") 0 0;
+				min-height: 115px;
+				color: #1f1f1f;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 20pt;
+				letter-spacing: -2px;
+				margin: 0 auto 10px auto;
+				text-align: center; }
+				.page-template-menu .menu-wrapper .menu-selection .menu-banner-cta .messaging {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						width: 70%; }
+				.page-template-menu .menu-wrapper .menu-selection .menu-banner-cta .tagline, .page-template-menu .menu-wrapper .menu-selection .menu-banner-cta .slogan {
+						color: #fff; }
+				.page-template-menu .menu-wrapper .menu-selection .menu-banner-cta .tagline {
+						margin: 0;
+						font-weight: bolder;
+						font-size: 25pt;
+						text-shadow: -1px 1px 1px #000; }
+				.page-template-menu .menu-wrapper .menu-selection .menu-banner-cta .slogan {
+						line-height: 1.2;
+						font-size: 17pt;
+						letter-spacing: 2px;
+						text-transform: none;
+						font-family: 'Roboto Slab', serif; }
+		.page-template-menu .menu-wrapper .menu-selection .menu-item {
+				color: #1f1f1f;
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				border-bottom: 1px solid #555;
+				padding: 15px 0;
+				display: flex;
+				justify-content: space-between; }
+				.page-template-menu .menu-wrapper .menu-selection .menu-item .item-info {
+						width: 58%; }
+						.page-template-menu .menu-wrapper .menu-selection .menu-item .item-info p.menu-item-title {
+								font-size: 14pt;
+								font-weight: bold;
+								margin: 0 0 5px; }
+						.page-template-menu .menu-wrapper .menu-selection .menu-item .item-info .item-description {
+								font-weight: 100; }
+				.page-template-menu .menu-wrapper .menu-selection .menu-item .prices {
+						width: 40%; }
+						.page-template-menu .menu-wrapper .menu-selection .menu-item .prices .item-price {
+								display: flex;
+								justify-content: space-between;
+								margin: 0 0 1px;
+								padding: 5px 7px; }
+								.page-template-menu .menu-wrapper .menu-selection .menu-item .prices .item-price:nth-child(even) {
+										background: #c1c1d2; }
+								.page-template-menu .menu-wrapper .menu-selection .menu-item .prices .item-price:nth-child(odd) {
+										background: #1f1f1f;
+										color: #fff; }
+								.page-template-menu .menu-wrapper .menu-selection .menu-item .prices .item-price .desc {
+										margin-right: 15px; }
+
+.page-template-menu .menu-wrapper .menu-home-content .home-menu-ctas, .page-template-menu .menu-wrapper .menu-home-content .home-menu-specials {
+		display: flex;
+		justify-content: space-between; }
+		.page-template-menu .menu-wrapper .menu-home-content .home-menu-ctas li, .page-template-menu .menu-wrapper .menu-home-content .home-menu-specials li {
+				min-height: 175px;
+				background: #1f1f1f;
+				flex-grow: 1;
+				margin: 0 1% 0 0;
+				display: flex;
+				align-items: center;
+				justify-content: center; }
+				.page-template-menu .menu-wrapper .menu-home-content .home-menu-ctas li:last-child, .page-template-menu .menu-wrapper .menu-home-content .home-menu-specials li:last-child {
+						margin-right: 0; }
+
+.page-template-menu .menu-wrapper .menu-home-content .home-menu-specials {
+		margin: 10px auto; }
