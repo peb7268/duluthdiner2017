@@ -40,6 +40,15 @@
 								background-position: -90px 60px; }
 		.home .banner.two {
 				margin-bottom: 130px; }
+		.single .wrapper.page {
+				overflow: hidden; }
+				.single .wrapper.page .post .post-header {
+						flex-direction: column;
+						text-transform: capitalize; }
+						.single .wrapper.page .post .post-header .title {
+								margin: 0px 1vw 1vh 0; }
+						.single .wrapper.page .post .post-header .social-row {
+								align-items: flex-start; }
 		.page-id-57 .wrapper.blog {
 				display: flex;
 				width: 98%;
@@ -94,4 +103,41 @@
 						justify-content: center; }
 				body.page.page-id-59 .contact-wrapper p:last-child {
 						text-align: center;
-						padding: 0 11vw; } }
+						padding: 0 11vw; }
+		.page-template-menu .menu-wrapper .menu-home-content .menu-home-body {
+				flex-direction: column; }
+				.page-template-menu .menu-wrapper .menu-home-content .menu-home-body .menu-sidebar {
+						width: 100%; }
+				.page-template-menu .menu-wrapper .menu-home-content .menu-home-body .right {
+						width: 100%;
+						margin-top: 10px;
+						margin-bottom: 90px; }
+		.page-template-menu .menu-wrapper .menu-home-content .home-menu-ctas {
+				flex-direction: column;
+				width: 98%;
+				margin: 0 auto; }
+				.page-template-menu .menu-wrapper .menu-home-content .home-menu-ctas li {
+						margin: 0 0 10px; }
+						.page-template-menu .menu-wrapper .menu-home-content .home-menu-ctas li:last-child {
+								margin-bottom: 0; }
+		.page-template-menu .menu-wrapper .menu-home-content .home-menu-specials {
+				width: 98%;
+				background: #1f1f1f;
+				display: flex;
+				flex-direction: column;
+				text-align: left;
+				align-items: flex-start;
+				padding: 2vh 0 2vh 10vw;
+				box-sizing: border-box; }
+				.page-template-menu .menu-wrapper .menu-home-content .home-menu-specials li {
+						background: none;
+						min-height: unset;
+						margin: 0 1% 1vh 0; }
+						.page-template-menu .menu-wrapper .menu-home-content .home-menu-specials li a {
+								color: #eee;
+								text-decoration: none;
+								display: flex;
+								align-items: center;
+								text-transform: capitalize; }
+								.page-template-menu .menu-wrapper .menu-home-content .home-menu-specials li a i {
+										margin: 0 10px 0 0; } }

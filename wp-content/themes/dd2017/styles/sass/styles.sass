@@ -151,6 +151,11 @@ footer
 .content p
     margin: 0 0 7px;
 
+.italics
+    font-style: italic;
+.underline
+    border-bottom: 1px solid rgba(45, 45, 44, .5);
+
 .dots
     list-style: disc;
     padding-left: 25px;
@@ -520,6 +525,9 @@ body .page, .menu-wrapper
     .sidebar
         width: 20%;
 
+.menu-wrapper
+    margin-bottom: 75px;
+
 .page-template-tpl-no-sidebar, .single-post
     background: #343343;
     .wrapper.page
@@ -725,22 +733,47 @@ body.page.page-id-59
 
 //Menu
 .page-template-menu .menu-wrapper
+    h4.menu-home-heading
+        background: #2d2d2c;
+        color: #aba69b;
+        font-size: 3vh;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 0;
     & > .menu
         width: 100%;
         max-width: 1400px;
         min-height: 550px;
         display: flex;
         justify-content: space-between;
-        padding: 10px;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+
+        .banner
+            position: absolute;
+            left: 0;
+            height: 360px;
+            width: 100%;
+            overflow: hidden;
+            z-index: 10;
+            img
+                width: 100%;
+                height: 100%;
     .menu-sidebar, .menu-selection
         box-sizing: border-box;
         padding: 10px;
         color: #fff;
+        position: relative;
+        z-index: 20;
 
     .menu-sidebar
         background: #aba69b;
         width: 25%;
         padding: 0;
+        margin: 0 5px 0 0;
+        opacity: .9;
         & > div
             display: flex;
             flex-direction: column;
@@ -776,9 +809,13 @@ body.page.page-id-59
                     a
                         background: #aba69b;
                         color: #1f1f1f;
+    
+    
+
     .menu-selection
         width: 75%;
         background: #aba69b;
+        margin-top: 350px;
         .banner
             width: 100%;
             img
@@ -824,11 +861,11 @@ body.page.page-id-59
         .menu-item
             color: #1f1f1f;
             font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            border-bottom: 1px solid #555;
-            padding: 15px 0;
             display: flex;
             justify-content: space-between;
+            border-bottom: 1px solid #9a968c;
+            margin: 0 0 25px;
+            padding: 0 0 10px;
 
             .item-info
                 width: 58%;
@@ -846,13 +883,90 @@ body.page.page-id-59
                     margin: 0 0 1px;
                     padding: 5px 7px;
                     &:nth-child(even)
-                        background: #c1c1d2;
+                        background: #96928a;
                     &:nth-child(odd)
                         background: #1f1f1f;
                         color: #fff;
                     .desc
                         margin-right: 15px; 
+    .menu-home-msg
+        height: 24%;
+        h4
+            text-align: right;
+            padding-right: 1vw;
+            margin-bottom: 5px;
+        p
+            font-size: 24pt;
+            font-weight: 100;
+            padding: 1.5vh 2vw;
+            line-height: 1.4;
     .menu-home-content
+        width: 100%;
+        background: #aba69b;
+        .menu-sidebar
+            margin: 0 5px 5px 0;
+        .row-1
+            margin-bottom: 5px;
+            h4
+                margin-bottom: 5px;
+                text-align: left;
+                padding-left: 1vw;
+        .home-menu-ctas
+                li
+                    &:nth-child(1)
+                        background: #f6343f;
+                    &:nth-child(1), &:nth-child(2)
+                        width: 20%;
+                    &:nth-child(2)
+                        background: #000;
+                    &:nth-child(3)
+                        position: relative;
+                        width: 40%;
+                        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+                        background: rgb(240,249,255); /* Old browsers */
+                        background: -moz-radial-gradient(center, ellipse cover,  rgba(240,249,255,1) 0%, rgba(203,235,255,1) 47%, rgba(161,219,255,1) 100%); /* FF3.6-15 */
+                        background: -webkit-radial-gradient(center, ellipse cover,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                        background: radial-gradient(ellipse at center,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                        a
+                            height: 100%;
+                            width: 100%;
+                        i
+                            position: absolute;
+                            top: 30%;
+                            left: 7%;
+                            font-size: 80pt;
+                            color: #fff;
+                        span
+                            position: absolute;
+                            left: 27%;
+                            top: 45%;
+                            text-transform: capitalize;
+                            font-size: 27pt;
+                            font-weight: bold;
+                            color: #aba69b;
+                            text-shadow: 0px 0px 1px rgba(0,0,0, .5);
+
+                    img
+                        width: 100%;
+
+        .menu-home-body
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5px 0 5px;
+            .right
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        .menu-banner
+            min-height: 275px;
+            background: #1f1f1f;
+            margin: 0 0 5px;
+            img
+                width: 100%;
+                height: 100%;
+                display: block;
         .home-menu-ctas, .home-menu-specials
             display: flex;
             justify-content: space-between;
@@ -864,9 +978,34 @@ body.page.page-id-59
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                color: #fff;
                 &:last-child
                     margin-right: 0;
         .home-menu-specials
             margin: 10px auto;
+            .standard-special
+                display: none;
+    .menu-post
+        width: 25%;
+        overflow: hidden;
+        flex-grow: 0;
+        align-items: flex-start;
+        position: relative;
+        a
+            img
+                width: 100%;
+                display: block;
+                min-height: 175px;
+        .special-title
+            position: absolute;
+            top: 30%;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            text-transform: capitalize;
+            width: 100%;
+            z-index: 20;
+    .the-specials
+        margin: 10px 0;
 
 @import 'media-queries'
