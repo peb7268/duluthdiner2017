@@ -127,7 +127,7 @@ function entree_price_box_content( $post ) {
         </style>
         <p class="priceMeta">Price Description <input type="text" name="prices[<?php echo $c; ?>][price_description]" value="<?php echo $price['price_description'] ?>" /> 
           -- Price: <input type="text" name="prices[<?php echo $c; ?>][price]" value="<?php echo $price['price'] ?>" /> 
-          -- On Special: <input class="checkBox" name="prices[<?php echo $c; ?>][special]" type="checkbox" value="special" <?php if(isset($checked)){var_dump($checked); echo $checked;} ?> >
+          -- On Special: <input class="checkBox" name="prices[<?php echo $c; ?>][special]" type="checkbox" value="special" <?php if(isset($checked)){ echo $checked;} ?> >
           <span class="hidden"> -- Special Price<input type="text" name="prices[<?php echo $c; ?>][special_price]" value="<?php if(isset($price['special_price'])){echo $price['special_price'];}?>" /></span>
           <button class="remove button">Remove Price</button>
         </p>
