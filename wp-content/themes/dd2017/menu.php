@@ -27,6 +27,8 @@
                                 $args['order']   = 'ASC';
                                 $args['orderby'] = 'date';
                                 $loop = new WP_Query($args);
+                                // var_dump($args);
+                                // die('');
                                 while ( $loop->have_posts() ) : $loop->the_post();
                             ?>
                             <div class='menu-item'>
