@@ -1,5 +1,5 @@
 
-@media (max-width: 500px)
+@media (max-width: 550px)
     header
         .wrapper
             width: 100%;
@@ -134,14 +134,24 @@
                         width: 100%;
                         margin-top: 10px;
                         margin-bottom: 90px;
-                .home-menu-ctas
-                    flex-direction: column;
-                    width: 98%;
-                    margin: 0 auto;
-                    li
-                        margin: 0 0 10px;
-                        &:last-child
-                            margin-bottom: 0;
+                .row-1
+                    .home-menu-ctas
+                        flex-direction: column;
+                        width: 99%;
+                        margin: 0 auto;
+                        li
+                            margin: 0 0 10px;
+                            width: 100%;
+                            &:last-child
+                                margin-bottom: 0;
+                            &:nth-child(3) 
+                                i
+                                    top: 25%;
+                                span
+                                    left: 34%;
+                                    top: 35%;
+                                    font-size: 25pt;
+                                    line-height: 1.2;
                 .home-menu-specials
                     width: 98%;
                     background: #1f1f1f;
@@ -149,12 +159,12 @@
                     flex-direction: column;
                     text-align: left;
                     align-items: flex-start;
-                    padding: 2vh 0 2vh 10vw;
+                    padding: 0;
                     box-sizing: border-box;
                     li
                         background: none;
                         min-height: unset;
-                        margin: 0 1% 1vh 0;
+                        margin: 0 1% 2vh 0;
                         a
                             color: #eee;
                             text-decoration: none;
@@ -163,3 +173,12 @@
                             text-transform: capitalize;
                             i
                                 margin: 0 10px 0 0;
+                        &.menu-post
+                            width: 100%;
+                    
+                .menu-home-msg
+                    .menu-home-heading
+                        text-align: center;
+                    p
+                        font-size: 7vw;
+                        text-align: center;

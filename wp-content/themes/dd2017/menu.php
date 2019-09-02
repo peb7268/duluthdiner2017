@@ -13,7 +13,17 @@
             ?> 
 
             <div class="banner">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/menu/banners/<?php echo $cat; ?>/banner.jpg">
+                <img 
+                    srcset(
+                        "<?php echo get_template_directory_uri(); ?>/img/menu/banners/<?php echo $cat; ?>/banner.jpg", 1400w
+                        "<?php echo get_template_directory_uri(); ?>/img/menu/banners/<?php echo $cat; ?>/banner-480.jpg", 480w
+                    )
+                    sizes("
+                        (max-width: 480px) 440px,
+                        1400px
+                    ")
+                    src="<?php echo get_template_directory_uri(); ?>/img/menu/banners/<?php echo $cat; ?>/banner.jpg"
+                >
             </div>
 
             <div class="menu-sidebar">
@@ -56,7 +66,15 @@
                 <?php else: ?>
                     <div class="menu-home-content">
                         <div class="menu-banner">
-                            <img src="http://duluthdiner.com/wp-content/themes/dd2017/img/headers/istockphoto-1030722720-2048x2048.jpg" />
+                            <picture>
+                                <source 
+                                    media="(max-width: 500px)"
+                                    srcset="<?php echo get_template_directory_uri(); ?>/img/headers/istockphoto-1030722720-2048x2048-500.jpg 500w"/>
+                                <source
+                                    media="(max-width: 1400px)"
+                                    srcset="<?php echo get_template_directory_uri(); ?>/img/headers/istockphoto-1030722720-2048x2048.jpg 1400w" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/headers/istockphoto-1030722720-2048x2048.jpg" />
+                            </picture>
                         </div>
                         
                         <div class="menu-home-body">
