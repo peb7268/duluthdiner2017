@@ -637,7 +637,7 @@ body.page.page-id-59
             flex-direction: column;
             margin: 0 1px 1px 0;
             width: 275px;
-            min-height: 275px;
+            height: 275px;
             position: relative;
             overflow: hidden;
             &:hover
@@ -697,6 +697,13 @@ body.page.page-id-59
         min-width: 280px;
         .banner
             margin: 0 0 25px;
+            &.recent_specials
+                .posts
+                    .menu-post
+                        width: 100%;
+                        margin: 0 0 25px;
+                    .standard-special
+                        display: none;
             h2
                 font-size: 15pt;
                 font-family: 'Roboto Slab', serif;
@@ -986,26 +993,27 @@ body.page.page-id-59
             margin: 10px auto;
             .standard-special
                 display: none;
-    .menu-post
-        width: 25%;
-        overflow: hidden;
-        flex-grow: 0;
-        align-items: flex-start;
-        position: relative;
-        a
-            img
-                width: 100%;
-                display: block;
-                min-height: 175px;
-        .special-title
-            position: absolute;
-            top: 30%;
-            color: #fff;
-            font-weight: bold;
-            text-align: center;
-            text-transform: capitalize;
+.menu-post
+    width: 25%;
+    overflow: hidden;
+    flex-grow: 0;
+    align-items: flex-start;
+    position: relative;
+    
+    a
+        img
             width: 100%;
-            z-index: 20;
+            display: block;
+            min-height: 175px;
+    .special-title
+        position: absolute;
+        top: 30%;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        text-transform: capitalize;
+        width: 100%;
+        z-index: 20;
     .the-specials
         margin: 10px 0;
 
