@@ -18,29 +18,57 @@
  * @package WordPress
  */
 
+ $local = false;
+
  define('WP_HOME', 'http://duluthdiner.com');
  define('WP_SITEURL', 'http://duluthdiner.com');
 
- 
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'duluthdiner-com' );
+if($local){
+	// ** MySQL settings - You can get this info from your web host ** //
+	/** The name of the database for WordPress */
+	define( 'DB_NAME', 'duluthdiner-com' );
 
-/** MySQL database username */
-define( 'DB_USER', 'wordpress' );
+	/** MySQL database username */
+	define( 'DB_USER', 'wordpress' );
 
-/** MySQL database password */
-define( 'DB_PASSWORD', 'password' );
+	/** MySQL database password */
+	define( 'DB_PASSWORD', 'password' );
 
-/** MySQL hostname */
-define( 'DB_HOST', 'mysql' );
+	/** MySQL hostname */
+	define( 'DB_HOST', 'mysql' );
+} else {
+	define('WP_HOME', 'http://duluthdiner.com');
+	define('WP_SITEURL', 'http://duluthdiner.com');
+   
+   
+   
+   // ** MySQL settings - You can get this info from your web host ** //
+   /** The name of the database for WordPress */
+   define( 'DB_NAME', 'duluthdiner2020' );
+   
+   /** MySQL database username */
+   define( 'DB_USER', 'dd_wp' );
+   
+   /** MySQL database password */
+   define( 'DB_PASSWORD', 'PzPsr19J0XSIig' );
+   
+   /** MySQL hostname */
+   define( 'DB_HOST', 'localhost' );
+   
+   /** Database Charset to use in creating database tables. */
+   define( 'DB_CHARSET', 'utf8' );
+   
+   /** The Database Collate type. Don't change this if in doubt. */
+   define( 'DB_COLLATE', '' );
+}
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
+
 
 /**
  * Authentication Unique Keys and Salts.
