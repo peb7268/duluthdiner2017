@@ -6,6 +6,8 @@
             flex-direction: column;
             .logo
                 margin: 0 0 10px;
+        .band
+            display: none;
     footer
         .wrapper
             flex-direction: column;
@@ -28,22 +30,44 @@
                 flex-direction: column;
                 .sidebar
                     width: 100%;
+                    .block > h2:first-child
+                        font-size: 24pt;
+                    p.tagline
+                        display: none;
+                    .main-cta ul li
+                        font-size: 12pt;
                     .social_media
                         ul
                             li
                                 margin: 5px 3vw 0 0;
                 .canvas
                     display: none;
+        
+            div.sidebar .block .main-cta
+                .btns
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                    a
+                        margin: 0 0 15px;
+                        padding: 15px;
+                        width: 100%;
         .banner.one
+            margin-bottom: 0;
             .wrapper
                 flex-direction: column;
                 .container.one
                     width: 100%;
                     margin: 0 0 25px;
                 .container.two
-                    height: 250px;
+                    height: 290px;
                     margin: 0 0 25px;
                     width: 100%;
+                    overflow: hidden;
+                    ul
+                        li
+                            margin: 0 0 10px;
+                            height: 90px;
                 .container.three
                     width: 100%;
                     height: 210px;
@@ -52,6 +76,16 @@
                         background-position: -90px 60px;
         .banner.two
             margin-bottom: 130px;
+        .banner.one .wrapper .container.catering
+            height: 320px;
+            width: 100%;
+            margin: 0 auto 25px;
+    .home-menu-specials
+        flex-direction: column;
+        li
+            width: 100%;
+            margin: 15px 0;
+
 
     .single
         .wrapper.page
