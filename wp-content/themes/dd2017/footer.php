@@ -19,5 +19,15 @@
     <script type"text/javascript" src="http://duluthdiner.com/wp-content/themes/dd2017/node_modules/jquery/dist/jquery.min.js"></script>
     <script type"text/javascript" src="http://duluthdiner.com/wp-content/themes/dd2017/node_modules/rx/dist/rx.all.js"></script>
     <script type"text/javascript" src="http://duluthdiner.com/wp-content/themes/dd2017/js/global.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30304370-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-30304370-1');
+    </script>
 </body>
 </html>

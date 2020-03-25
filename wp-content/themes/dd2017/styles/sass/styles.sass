@@ -1,5 +1,3 @@
-
-
 @import 'reset'; 
 @import 'colors'; 
 @import 'fonts'; 
@@ -64,18 +62,32 @@ header
         .nav
             display: flex;
             justify-content: space-between;
-            // width: 18%;
-            // margin: 31px 0 0;
-            margin: 0;
-            li
-                margin: 0 10px 0 0;
-                a
-                   color: $diner-red;
-                   //font-family: 'Vast Shadow', cursive;
-                   font-family: 'Source Sans Pro', sans-serif;
-                   text-decoration: none;
-                   font-weight: 100; 
-                   font-size: 15pt;
+            .takeout
+                background: $light-green;
+                border: 1px solid darken($light-green, 5%);
+                color: #fff;
+                padding: 7px 10px;
+                margin: -5px 0 0 0;
+                text-decoration: none;
+                border-radius: 4px;
+                text-transform: capitalize;
+                i
+                    padding-right: 5px;
+            ul
+                display: flex;
+                justify-content: space-between;
+                // width: 18%;
+                // margin: 31px 0 0;
+                margin: 0;
+                li
+                    margin: 0 10px 0 0;
+                    a
+                        color: $diner-red;
+                        //font-family: 'Vast Shadow', cursive;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        text-decoration: none;
+                        font-weight: 100; 
+                        font-size: 15pt;
     .band
         position: absolute;
         top: 0;
@@ -282,7 +294,7 @@ footer
                 ul
                     display: flex;
                     li
-                        margin: 5px 0.5vw 0 0;
+                        margin: 5px 10px 0 0;
                         a
                             font-size: 18pt;
                             color: hsla(60, 0%, 83%, 1);
@@ -355,6 +367,8 @@ footer
                     font-family: 'Source Sans Pro', sans-serif;
                     text-transform: capitalize;
                     font-weight: 100;
+                    position: relative;
+                    z-index: 10;
                     span
                         display: block;
                         font-family: 'Roboto Slab', serif
@@ -628,6 +642,7 @@ body.page.page-id-59
         display: flex;
         flex-wrap: wrap;
         align-items: stretch;
+        align-content: flex-start;
         flex-grow: 1;
         flex-shrink: 1;
         .post
@@ -1007,7 +1022,7 @@ body.page.page-id-59
             min-height: 175px;
     .special-title
         position: absolute;
-        top: 30%;
+        bottom: 5%;
         color: #fff;
         font-weight: bold;
         text-align: center;
@@ -1016,5 +1031,18 @@ body.page.page-id-59
         z-index: 20;
     .the-specials
         margin: 10px 0;
+
+
+.social_media
+    ul
+        display: flex;
+        li
+            margin: 5px 10px 0 0;
+            a
+                font-size: 18pt;
+                color: hsla(60, 0%, 83%, 1);
+.blog .social_media ul li a, .social_media.dark ul li a
+    color: #333;
+
 
 @import 'media-queries'

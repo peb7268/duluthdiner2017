@@ -16,9 +16,14 @@
                 margin: 12px auto;
                 padding: 0 5vw;
                 text-align: center;
+    
+    .page-banner
+        img
+            height: 100%;
+    
     .home
         .cta
-            margin: 175px auto 10px;
+            margin: 195px auto 10px;
             .wrapper
                 flex-direction: column;
                 .sidebar
@@ -73,7 +78,7 @@
                     justify-content: center;
                     .post
                         width: auto;
-                        margin: 0 auto 25px;
+                        margin: 0 5px 25px 0;
                 aside
                     width: 100%;
                     margin-bottom: 50px;
@@ -85,10 +90,9 @@
                     .social-row
                         justify-content: center;
     body.page.page-id-59
-        .page-banner
-            .message
-                top: 20%;
-                left: 0;
+        .message
+            top: 20%;
+            left: 0;
         .contact-wrapper
             flex-direction: column;
             .left, .right
@@ -182,3 +186,26 @@
                     p
                         font-size: 7vw;
                         text-align: center;
+    
+    .page-template-tpl-no-sidebar .wrapper.page, .single-post .wrapper.page
+        margin: 175px auto 100px;
+        width: 100%;
+    
+    .page-template-menu .menu-wrapper .menu-home-content .menu-banner img
+        min-height: 280px;
+        width: auto;
+        height: 100%;
+
+    .menu-wrapper .wrapper
+        margin-top: 0;
+        &.menu
+            display: block;
+            .banner
+                position: relative;
+                img
+                    width: auto;
+            .menu-sidebar
+                width: 100%;
+            .menu-selection
+                margin: 0 auto;
+                width: 100%;

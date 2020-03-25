@@ -11,6 +11,9 @@
     <script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 </head>
 <body <?php body_class(); ?>>
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3004/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
+//]]></script>
     <header>
         <div class="band">
             <div class="wrapper">
@@ -25,19 +28,25 @@
                 <!-- <a href="<?php echo get_site_url(); ?>"></a> -->
             </a>
 
-            <ul class="nav">
-                <li>
-                    <a href="/about">About</a>
-                </li>
-                <li>
-                    <a href="/menu">Menu</a>
-                </li>
-                <li>
-                    <a href="/news">News</a>
-                </li>
-                <li>
-                    <a href="/contact">Contact</a>
-                </li>
-            </ul>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="/news">News</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <a href="https://www.toasttab.com/duluth-diner-3620-peachtree-industrial-blvd/v3" class="takeout" target="_blank">
+                    <i class="fas fa-utensils"></i>
+                    order togo
+                </a>
+            </div>
         </div>
     </header>

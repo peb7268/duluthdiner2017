@@ -13,8 +13,10 @@
 						margin: 12px auto;
 						padding: 0 5vw;
 						text-align: center; }
+		.page-banner img {
+				height: 100%; }
 		.home .cta {
-				margin: 175px auto 10px; }
+				margin: 195px auto 10px; }
 				.home .cta .wrapper {
 						flex-direction: column; }
 						.home .cta .wrapper .sidebar {
@@ -60,7 +62,7 @@
 						justify-content: center; }
 						.page-id-57 .wrapper.blog section.posts .post {
 								width: auto;
-								margin: 0 auto 25px; }
+								margin: 0 5px 25px 0; }
 				.page-id-57 .wrapper.blog aside {
 						width: 100%;
 						margin-bottom: 50px; }
@@ -70,7 +72,7 @@
 										width: 25%; }
 						.page-id-57 .wrapper.blog aside .social-row {
 								justify-content: center; }
-		body.page.page-id-59 .page-banner .message {
+		body.page.page-id-59 .message {
 				top: 20%;
 				left: 0; }
 		body.page.page-id-59 .contact-wrapper {
@@ -155,4 +157,24 @@
 				text-align: center; }
 		.page-template-menu .menu-wrapper .menu-home-content .menu-home-msg p {
 				font-size: 7vw;
-				text-align: center; } }
+				text-align: center; }
+		.page-template-tpl-no-sidebar .wrapper.page, .single-post .wrapper.page {
+				margin: 175px auto 100px;
+				width: 100%; }
+		.page-template-menu .menu-wrapper .menu-home-content .menu-banner img {
+				min-height: 280px;
+				width: auto;
+				height: 100%; }
+		.menu-wrapper .wrapper {
+				margin-top: 0; }
+				.menu-wrapper .wrapper.menu {
+						display: block; }
+						.menu-wrapper .wrapper.menu .banner {
+								position: relative; }
+								.menu-wrapper .wrapper.menu .banner img {
+										width: auto; }
+						.menu-wrapper .wrapper.menu .menu-sidebar {
+								width: 100%; }
+						.menu-wrapper .wrapper.menu .menu-selection {
+								margin: 0 auto;
+								width: 100%; } }

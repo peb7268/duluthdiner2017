@@ -29,29 +29,7 @@
                 <div class="block">
                     <div class="social_media">
                         <h2>Connect &amp; Eat</h2>
-                        <ul>
-                            <li class="facebook">
-                                <a href="#facebook">
-                                    <i class="fab fa-facebook" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="instagram">
-                                <a href="#instagram">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="google">
-                                <a href="#google">
-                                    <i class="fab fa-google" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li class="nextdoor">
-                                 <a href="https://nextdoor.com/pages/duluth-diner-duluth-ga?init_source=copy_link_share" target="_blank" rel="noopener noreferrer" title="nextdoor">
-                                    <i class="fa fa-home" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        <?php get_template_part('partials/social'); ?>
                     </div>
                 </div>
             </div>
@@ -67,7 +45,7 @@
                         <span>The best breakfast</span>
                         you can get at dinner
                     </h4>
-                    <a href="#">Breakfast menu</a>
+                    <a href="./menu/breakfast">Breakfast menu</a>
                     <div class="backdrop"></div>
                 </div>
                 <div>
@@ -77,17 +55,17 @@
                             Fast &amp; fresh
                         </span>
                     </h4>
-                    <a href="#">Lunch menu</a>
+                    <a href="./menu/the-lighter-fare/">Lunch menu</a>
                     <div class="backdrop"></div>
                 </div>
             </div>
             <div class="container two togo">
-                <a href="https://www.ubereats.com/stores/e968dff0-af39-48fe-a2b5-65adc1a95654/" target="_self"></a>
+                <a href="https://www.ubereats.com/atlanta/food-delivery/duluth-diner/6Wjf8K85SP6itWWtwalWVA" target="_self"></a>
             </div>
             <div class="container three reviews">
                 <h2>Let us cater your next event</h2>
                 <p>Fast, delicious, food | <span>Hassle free cleanup</span></p>
-                <a href="" class="btn">
+                <a href="http://<?php bloginfo('stylesheet_directory'); ?>/assets/pdfs/menu.pdf" class="btn" target="_blank">
                     Get the details
                     <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
                 </a>

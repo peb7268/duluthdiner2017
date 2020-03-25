@@ -69,11 +69,11 @@
                             <picture>
                                 <source 
                                     media="(max-width: 500px)"
-                                    srcset="<?php echo get_template_directory_uri(); ?>/img/headers/istockphoto-1030722720-2048x2048-500.jpg 500w"/>
+                                    srcset="<?php echo get_template_directory_uri(); ?>/img/headers/duluth_diner_menu_header_mobile.jpg 500w"/>
                                 <source
                                     media="(max-width: 1400px)"
-                                    srcset="<?php echo get_template_directory_uri(); ?>/img/headers/istockphoto-1030722720-2048x2048.jpg 1400w" />
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/headers/istockphoto-1030722720-2048x2048.jpg" />
+                                    srcset="<?php echo get_template_directory_uri(); ?>/img/headers/duluth_diner_menu_header.jpg 1400w" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/headers/duluth_diner_menu_header.jpg" />
                             </picture>
                         </div>
                         
@@ -87,15 +87,17 @@
                                     <h4 class="menu-home-heading">order up</h4>
                                     <ul class="home-menu-ctas">
                                         <li>
-                                            <img src="http://duluthdiner.com/wp-content/themes/dd2017/img/ctas/grub_hub.jpg">
+                                            <a href="https://www.grubhub.com/restaurant/duluth-diner-3620-peachtree-industrial-blvd-duluth/873381?gclid=CjwKCAjw3-bzBRBhEiwAgnnLCmbQ-hkz8O3Ad22ruzJiTKDqtbjWjtVzwudbb3kLxAq7lEtEa1KHCxoCzM0QAvD_BwE&gclsrc=aw.ds" target="_blank">
+                                                <img src="http://duluthdiner.com/wp-content/themes/dd2017/img/ctas/grub_hub.jpg">
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="https://www.ubereats.com/stores/e968dff0-af39-48fe-a2b5-65adc1a95654/" target="_self">
+                                            <a href="https://www.ubereats.com/atlanta/food-delivery/duluth-diner/6Wjf8K85SP6itWWtwalWVA" target="_blank">
                                                 <img src="http://duluthdiner.com/wp-content/themes/dd2017/assets/img/ubereats_banner.jpg">
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="http://duluthdiner.com/wp-content/themes/dd2017/assets/pdfs/menu.pdf">
                                                 <i class="far fa-file-alt"></i>
                                                 <span>download the menu</span>
                                             </a>
@@ -112,7 +114,7 @@
                                 </div>
 
                                 <div class="the-specials">
-                                    <h4 class="menu-home-heading">these are more than food. they're specials</h4>
+                                    <h4 class="menu-home-heading">Take the hassle out of quarantine. order family style</h4>
                                     <ul class="home-menu-specials">
                                         <?php get_template_part('partials/loops/specials'); ?>
                                     </ul>

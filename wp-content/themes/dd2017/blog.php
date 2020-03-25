@@ -17,7 +17,9 @@
                     <h2>
                         <span></span>Reccomend Us<span></span>
                     </h2>
-                    <?php get_template_part('partials/social-row'); ?>
+                    <div class="social_media">
+                        <?php get_template_part('partials/social'); ?>
+                    </div>
                 </div>
             </aside>
         </div>   

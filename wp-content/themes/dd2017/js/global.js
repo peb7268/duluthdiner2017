@@ -21,4 +21,6 @@ $('document').ready(function($){
     // .subscribe(className => page_name = className);
     // debugger;
     // Site.init(page_name);
+
+    $('.menu-post .shade').on('click', function(evt){ window.location.href = $(evt.target.parentElement).find('a').attr('href') });
 });
