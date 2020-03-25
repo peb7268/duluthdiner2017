@@ -1,5 +1,5 @@
 <?php
-
+// die('local');
 function dd_register_nav_menus() {
   register_nav_menus(array('diner-menu' => __( 'Diner Menu' )));
 }
