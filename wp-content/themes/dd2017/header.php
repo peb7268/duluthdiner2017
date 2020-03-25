@@ -17,7 +17,14 @@
     <header>
         <div class="band">
             <div class="wrapper">
-                <a href="tel:(770) 814-0523" class="phone">(770) 814-0523</a>
+                <div class="top-ctas">
+                    <a href="https://www.toasttab.com/duluth-diner-3620-peachtree-industrial-blvd/v3" class="takeout" target="_blank">
+                        <i class="fas fa-hamburger"></i> order togo
+                    </a>
+                    <div class="phone-tab">
+                        <a href="tel:(770) 814-0523" class="phone">(770) 814-0523</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="wrapper">
@@ -43,10 +50,6 @@
                         <a href="/contact">Contact</a>
                     </li>
                 </ul>
-                <a href="https://www.toasttab.com/duluth-diner-3620-peachtree-industrial-blvd/v3" class="takeout" target="_blank">
-                    <i class="fas fa-utensils"></i>
-                    order togo
-                </a>
             </div>
         </div>
     </header>

@@ -5,24 +5,41 @@
             <div class="sidebar">
                 <div class="block">
                     <h2>
-                        <span>See what's cooking in</span>
-                        The kitchen
+                        <span>check out our</span>
+                        covid curbside
                     </h2>
-                    <div class="specials">
-                        <h2>
-                            Weekly Special
-                        </h2>
-                        <p>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            Pot Roast Quesedilla
+                    <div class="main-cta">
+                        <p class="tagline">
+                            during this trying time
+                            let us take something off 
+                            of your plate with our
+                            concierge curbside.
                         </p>
-                    </div>
-                    <div class="diner-reccomendations">
-                        <h2>Diner Picks</h2>
-                        <p>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            Lobster Bisque
-                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                order online right from your coutch, car, or wherever
+                            </li>
+                            <li>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                pay online
+                            </li>
+                            <li>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                pull up out front and we bring it right out!
+                            </li>
+                        </ul>
+
+                        <div class="btns">
+                            <a href="<?php bloginfo('site_url'); ?>/news/covid-curbside">
+                                <i class="fas fa-search"></i>
+                                learn more
+                            </a>
+                            <a href="https://www.toasttab.com/duluth-diner-3620-peachtree-industrial-blvd/v3" target="_blank">
+                                <i class="fas fa-utensils"></i>
+                                place an order
+                            </a>
+                        </div>
                     </div>
                 </div>
 

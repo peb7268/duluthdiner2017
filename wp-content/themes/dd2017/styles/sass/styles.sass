@@ -1,6 +1,7 @@
 @import 'reset'; 
 @import 'colors'; 
-@import 'fonts'; 
+@import 'fonts';
+@import 'mixins'; 
 
 //Globals
 body, div, a, html, p, h1, h2, h3, h4, span
@@ -88,22 +89,52 @@ header
                         text-decoration: none;
                         font-weight: 100; 
                         font-size: 15pt;
+                    &:last-child
+                        margin-right: 0;
     .band
         position: absolute;
         top: 0;
         left: 0;
-        background: $diner-red;
+        background: #4c0101;
         width: 100%;
-        min-height: 20px;
+        min-height: 10px;
         color: #fff
-        border-bottom: 1px solid #4c0101;
-        display: none;
+        // border-bottom: 1px solid #4c0101;
+        // display: none;
         .wrapper
-            a.phone
-                color: #fff;
-                text-decoration: none;
+            max-width: 1200px;
+            display: block;
+            position: relative;
+            .top-ctas
                 position: absolute;
-                right: 5%;
+                right: 0;
+                top: 10px;
+                width: 250px;
+                height: 25px;
+                .takeout
+                    color: $light-green;
+                    margin-top: 0;
+                    padding: 5px 10px;
+                    top: 1px;
+                    position: absolute;
+                    left: 0;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    i
+                        margin-right: 5px;
+                .phone-tab
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    background: #4c0101;
+                    border-radius: 0 0 4px 4px;
+                    border-bottom: 1px solid #230000;
+                    border-right: 1px solid #230000;
+                    border-left: 1px solid #230000;
+                    padding: 5px 15px 7px;
+                    a.phone
+                        color: #fff;
+                        text-decoration: none;
 
 footer
     position: fixed;
@@ -259,24 +290,61 @@ footer
 
             div, h2, p, a 
                 color: hsla(0, 0%, 93%, 0.9);
+            
+            .main-cta
+                .btns
+                    display: flex;
+                    justify-content: space-between;
+                    width: 116%;
+                    margin-left: -8%;
+                    a
+                        width: 47%;
+                        text-transform: capitalize;
+                        box-sizing: border-box;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        i
+                            margin-right: 10px;
+                        &:nth-last-child(1)
+                            @include btn(4px, $light-green, darken($light-green, 20%));
+                            // padding: 10px;
+                            
+                        &:nth-last-child(2)
+                            @include btn(4px, $light-orange, darken($light-orange, 20%));
+                            // padding: 10px;
+                            
+                ul
+                    margin-bottom: 35px;
+                    li
+                        font-weight: 100;
+                        position: relative;
+                        padding-left: 12px;
+                        margin: 0 0 10px;
+                        i
+                            position: absolute;
+                            top: 2px;
+                            left: 0;
+            
             a
                 text-decoration: none;
             & .block > div
                 margin: 0 0 20px;
-                &.specials
-                    margin: 40px 0 20px 0;
+                &.main-cta
+                    margin: 0 0 25px 0;
             h2
                 //font-family: 'Vast Shadow', cursive;
                 font-family: 'Roboto Slab', serif;
                 color: hsla(62, 7%, 90%, 0.9);
                 font-size: 19pt;
-                margin: 0 0 4px 0;
+                margin: 0 0 25px 0;
             .block > h2:first-child
                 text-transform: capitalize;
                 font-weight: bold;
-                font-size: 32pt;
+                font-size: 2.2vw;
                 border-bottom: 1px solid #eee;
                 padding: 0 0 10px;
+                margin-bottom: 15px;
                 
                 span
                     font-weight: 100;
@@ -284,13 +352,28 @@ footer
                     font-size: 10pt;
                     display: block;
                     text-transform: uppercase;
+                    margin: 0 0 2px;
             p
+                margin: 0 0 5px;
+                padding: 0;
                 -webkit-font-smoothing: antialiased;
-                padding: 0 0 0 5px;
                 color: #eee;
+                font-weight: 100;
+                font-family: 'Open Sans', serif;
                 i 
                     padding: 0 5px 0 0;
+            h2.cta-heading
+                text-transform: uppercase;
+                line-height: 1.1;
+            p.tagline
+                text-transform: uppercase;
+                font-size: 10pt;
+                line-height: 1.4;
+                margin-bottom: 25px;
             .social_media
+                h2
+                    margin-bottom: 5px;
+                    font-size: 12pt;
                 ul
                     display: flex;
                     li
