@@ -54,6 +54,8 @@
         </div>
     </div>
 
+    <?php get_template_part('partials/specials'); ?>
+
     <div class="home banner one">
         <div class="wrapper">
             <div class="container one">
@@ -90,7 +92,7 @@
             <div class="container two togo">
                 <ul>
                     <li><a href="https://www.ubereats.com/atlanta/food-delivery/duluth-diner/6Wjf8K85SP6itWWtwalWVA" target="_self"></a></li>
-                    <li><a href="">
+                    <li><a href="https://www.grubhub.com/restaurant/duluth-diner-3620-peachtree-industrial-blvd-duluth/873381?gclid=CjwKCAjw3-bzBRBhEiwAgnnLCmbQ-hkz8O3Ad22ruzJiTKDqtbjWjtVzwudbb3kLxAq7lEtEa1KHCxoCzM0QAvD_BwE&gclsrc=aw.ds" target="_blank">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/grubhub-horizontal.png" />
                     </a></li>
                     <li>

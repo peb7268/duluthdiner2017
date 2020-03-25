@@ -113,12 +113,7 @@
                                     </p>
                                 </div>
 
-                                <div class="the-specials">
-                                    <h4 class="menu-home-heading">Take the hassle out of quarantine. order family style</h4>
-                                    <ul class="home-menu-specials">
-                                        <?php get_template_part('partials/loops/specials'); ?>
-                                    </ul>
-                                </div>
+                                <?php get_template_part('partials/specials'); ?>
                             </div>
                         </div>
                     </div>
