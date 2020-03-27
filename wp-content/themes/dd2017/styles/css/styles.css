@@ -635,7 +635,7 @@ footer {
 		.home.banner.two .wrapper {
 				background: #e4e5e7;
 				min-height: 100px;
-				padding: 40px 20px 0;
+				padding: 30px 20px 40px;
 				box-sizing: border-box;
 				position: relative; }
 				.home.banner.two .wrapper span.quote {
@@ -644,20 +644,29 @@ footer {
 						top: 10px;
 						font-size: 40pt; }
 						.home.banner.two .wrapper span.quote.one {
-								left: 10px; }
+								left: 20px;
+								top: -10px; }
+								.home.banner.two .wrapper span.quote.one i {
+										font-size: 15pt;
+										color: #0061b4; }
 						.home.banner.two .wrapper span.quote.two {
 								right: 10px; }
 				.home.banner.two .wrapper .testimonial {
 						width: 92%;
-						margin: 0 auto; }
+						margin: 0 auto;
+						transition: opacity 700ms ease-in-out; }
+						.home.banner.two .wrapper .testimonial.hidden {
+								opacity: 0; }
 						.home.banner.two .wrapper .testimonial .text {
 								color: #105d89;
-								margin: -15px 0 0 0;
+								margin: -15px 0 25px 0;
 								font-weight: 100;
 								font-size: 20pt; }
 						.home.banner.two .wrapper .testimonial .name {
 								text-align: right;
 								margin: -5px 0 0 0; }
+								.home.banner.two .wrapper .testimonial .name::before {
+										content: "- "; }
 
 .home .the-specials {
 		background: #aba69b;
@@ -1255,11 +1264,13 @@ body.page.page-id-59 .social {
 										background-size: 60%;
 										background-position: -90px 60px; }
 		.home .banner.two {
-				margin-bottom: 130px; }
+				margin-bottom: 150px; }
 		.home .banner.one .wrapper .container.catering {
 				height: 320px;
 				width: 100%;
 				margin: 0 auto 25px; }
+		.quote.one i {
+				display: none; }
 		.home-menu-specials {
 				flex-direction: column; }
 				.home-menu-specials li {

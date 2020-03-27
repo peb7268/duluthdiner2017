@@ -63,11 +63,13 @@
 										background-size: 60%;
 										background-position: -90px 60px; }
 		.home .banner.two {
-				margin-bottom: 130px; }
+				margin-bottom: 150px; }
 		.home .banner.one .wrapper .container.catering {
 				height: 320px;
 				width: 100%;
 				margin: 0 auto 25px; }
+		.quote.one i {
+				display: none; }
 		.home-menu-specials {
 				flex-direction: column; }
 				.home-menu-specials li {

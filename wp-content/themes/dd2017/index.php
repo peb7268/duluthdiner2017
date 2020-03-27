@@ -107,8 +107,10 @@
 
     <div class="home banner two">
         <div class="wrapper testimonials">
-            <span class="quote one">"</span>
-            <span class="quote two">"</span>
+            <span class="quote one">
+                <i class="fas fa-utensils" aria-hidden="true"></i>
+            </span>
+
             <div class="testimonial">
                 <p class="text">
                     It's hard to believe how everything on a menu can be so good, but everything i've
