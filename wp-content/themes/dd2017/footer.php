@@ -12,7 +12,10 @@
                 </a>
             </div>
 
-            <a href="tel:770-814-0523" class="phone">(770) 814-0523</a>
+            <div class="social_media">
+                <h2>Connect &amp; Eat</h2>
+                <?php get_template_part('partials/social'); ?>
+            </div>
         </div>
     </footer>
 

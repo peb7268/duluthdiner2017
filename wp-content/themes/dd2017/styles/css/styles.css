@@ -171,29 +171,46 @@ header {
 												text-decoration: none; }
 
 footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		position: fixed;
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		display: block;
-		min-height: 30px;
+		min-height: 40px;
 		background: #1f1f1f;
 		color: #f8f7f2;
-		z-index: 9999; }
+		z-index: 9999;
+		padding: 0px 0 5px; }
 		footer .wrapper {
 				box-sizing: border-box;
 				padding: 6px 0 5px;
 				display: flex;
 				justify-content: space-between; }
-				footer .wrapper .contact_info a {
-						text-decoration: none;
-						color: #fff;
-						margin: 0 10px 0 0; }
-						footer .wrapper .contact_info a.location {
-								color: #dc4a3d; }
+				footer .wrapper .copy {
+						display: flex;
+						align-items: center; }
+				footer .wrapper .contact_info {
+						display: flex;
+						align-items: center; }
+						footer .wrapper .contact_info a {
+								text-decoration: none;
+								color: #fff;
+								margin: 0 10px 0 0; }
+								footer .wrapper .contact_info a.location {
+										color: #dc4a3d; }
 				footer .wrapper a.phone {
 						color: #fff;
 						text-decoration: none; }
+				footer .wrapper div.social_media {
+						display: flex;
+						align-items: center; }
+						footer .wrapper div.social_media h2 {
+								font-size: 14pt;
+								margin: 5px 15px 0 0; }
+						footer .wrapper div.social_media ul li a {
+								color: #fff; }
 
 .title {
 		font-size: 24pt;
@@ -328,6 +345,7 @@ footer {
 				color: rgba(237, 237, 237, 0.9); }
 		.home.cta .sidebar .main-cta .btns {
 				display: flex;
+				flex-direction: column;
 				justify-content: space-between;
 				width: 116%;
 				margin-left: -8%; }
@@ -349,19 +367,18 @@ footer {
 								text-decoration: none;
 								border-radius: 4px;
 								text-transform: capitalize;
-								text-align: center; }
+								text-align: center;
+								width: 100%;
+								padding: 20px 0; }
 						.home.cta .sidebar .main-cta .btns a:nth-last-child(2) {
-								background: #c27400;
-								border: 1px solid #5c3700;
-								color: #fff;
-								padding: 7px 10px;
-								margin: -5px 0 0 0;
-								text-decoration: none;
-								border-radius: 4px;
-								text-transform: capitalize;
-								text-align: center; }
+								font-weight: 100;
+								margin-bottom: 25px;
+								color: #c27400;
+								overflow: hidden; }
+								.home.cta .sidebar .main-cta .btns a:nth-last-child(2) i {
+										margin: 2px 0 0 10px; }
 		.home.cta .sidebar .main-cta ul {
-				margin-bottom: 35px; }
+				margin-bottom: 10px; }
 				.home.cta .sidebar .main-cta ul li {
 						font-weight: 100;
 						position: relative;
@@ -385,7 +402,7 @@ footer {
 		.home.cta .sidebar .block > h2:first-child {
 				text-transform: capitalize;
 				font-weight: bold;
-				font-size: 2.2vw;
+				font-size: 18pt;
 				border-bottom: 1px solid #eee;
 				padding: 0 0 10px;
 				margin-bottom: 15px; }
@@ -413,16 +430,6 @@ footer {
 				font-size: 10pt;
 				line-height: 1.4;
 				margin-bottom: 25px; }
-		.home.cta .sidebar .social_media h2 {
-				margin-bottom: 5px;
-				font-size: 12pt; }
-		.home.cta .sidebar .social_media ul {
-				display: flex; }
-				.home.cta .sidebar .social_media ul li {
-						margin: 5px 10px 0 0; }
-						.home.cta .sidebar .social_media ul li a {
-								font-size: 18pt;
-								color: #d4d4d4; }
 
 .home.cta .canvas {
 		height: 400px;

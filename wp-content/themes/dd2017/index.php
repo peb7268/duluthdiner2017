@@ -6,7 +6,7 @@
                 <div class="block">
                     <h2>
                         <span>check out our</span>
-                        covid curbside
+                        curbside service
                     </h2>
                     <div class="main-cta">
                         <p class="tagline">
@@ -18,7 +18,7 @@
                         <ul>
                             <li>
                                 <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                order online right from your coutch, car, or wherever
+                                order online right from your couch, car, or wherever
                             </li>
                             <li>
                                 <i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -28,12 +28,16 @@
                                 <i class="fa fa-caret-right" aria-hidden="true"></i>
                                 pull up out front and we bring it right out!
                             </li>
+                            <li>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                order directly with the button below and skip the fees!
+                            </li>
                         </ul>
 
                         <div class="btns">
                             <a href="<?php bloginfo('site_url'); ?>/news/covid-curbside">
-                                <i class="fas fa-search"></i>
                                 learn more
+                                <i class="fas fa-chevron-right"></i>
                             </a>
                             <a href="https://www.toasttab.com/duluth-diner-3620-peachtree-industrial-blvd/v3" target="_blank">
                                 <i class="fas fa-utensils"></i>
@@ -43,12 +47,7 @@
                     </div>
                 </div>
 
-                <div class="block">
-                    <div class="social_media">
-                        <h2>Connect &amp; Eat</h2>
-                        <?php get_template_part('partials/social'); ?>
-                    </div>
-                </div>
+                
             </div>
             <div class="canvas"></div>
         </div>
