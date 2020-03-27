@@ -755,28 +755,23 @@ body.page.page-id-59 .review-us {
 		body.page.page-id-59 .review-us .google {
 				background: #f6504e; }
 
-body.page.page-id-59 .social {
-		display: flex; }
-		body.page.page-id-59 .social .social-wrapper {
-				display: flex;
-				align-items: flex-start; }
-				body.page.page-id-59 .social .social-wrapper > div {
-						display: flex;
-						align-items: center;
-						margin: 0 1% 0 0; }
-						body.page.page-id-59 .social .social-wrapper > div i {
-								min-width: 25px;
-								display: flex;
-								align-items: baseline;
-								justify-content: center;
-								margin: 2px 0 0 0; }
-				body.page.page-id-59 .social .social-wrapper .social-circle-border {
-						background: #353343;
-						color: #fff;
-						padding: 1vh;
-						border-radius: 50%;
-						font-size: 18pt;
-						text-decoration: none; }
+body.page.page-id-59 form p {
+		margin: 0 0 25px;
+		width: 95%; }
+		body.page.page-id-59 form p input, body.page.page-id-59 form p textarea {
+				width: 100%;
+				border: 1px solid #ccc;
+				padding: 7px 7px;
+				font-size: 12pt;
+				color: #999;
+				border-radius: 4px;
+				box-sizing: border-box; }
+		body.page.page-id-59 form p input[type="submit"] {
+				background: #0061b4;
+				color: #fff;
+				border: 1px solid #002a4e;
+				width: 100%;
+				margin: 0 auto; }
 
 .single .wrapper.page {
 		margin-top: 175px; }
@@ -1329,14 +1324,6 @@ body.page.page-id-59 .social {
 										justify-content: center; }
 										body.page.page-id-59 .contact-wrapper .right .review-us > div a i {
 												font-size: 7vw; }
-				body.page.page-id-59 .contact-wrapper .social .section-header {
-						margin: 0 auto 20px;
-						padding: 0 2vw; }
-						body.page.page-id-59 .contact-wrapper .social .section-header span {
-								margin-top: 5px;
-								display: block; }
-				body.page.page-id-59 .contact-wrapper .social .social-wrapper {
-						justify-content: center; }
 				body.page.page-id-59 .contact-wrapper p:last-child {
 						text-align: center;
 						padding: 0 11vw; }

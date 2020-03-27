@@ -19,7 +19,7 @@
  */
 
  $local = false;
- $useRemoteDb = true;
+ $useRemoteDb = false;
 
  define('WP_HOME', 'http://duluthdiner.com');
  define('WP_SITEURL', 'http://duluthdiner.com');
