@@ -117,7 +117,7 @@
                     had has been amazing.
                 </p>
                 <p class="name">
-                    - Paul
+                    Paul
                 </p>
             </div>
         </div>
