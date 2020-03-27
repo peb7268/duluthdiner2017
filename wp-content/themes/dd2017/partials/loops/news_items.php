@@ -1,7 +1,13 @@
 <?php $query = new Wp_Query('category_name=news'); ?>
 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
     <div class="post">
-        <img src="https://picsum.photos/500/500" />
+        <?php 
+            if(has_post_thumbnail()){ 
+                the_post_thumbnail();
+            } else {
+        ?>
+            <img src="https://picsum.photos/500/500" />
+        <?php } ?>
        
         <h2 class="preview">
             <?php the_title(); ?>

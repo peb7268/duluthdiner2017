@@ -685,7 +685,11 @@ body .page, .menu-wrapper {
 		display: flex;
 		justify-content: space-between; }
 		body .page .single-banner, .menu-wrapper .single-banner {
-				min-height: 255px; }
+				min-height: 255px;
+				overflow: hidden; }
+				body .page .single-banner img, .menu-wrapper .single-banner img {
+						height: 100%;
+						width: auto; }
 		body .page .content, body .page .sidebar, .menu-wrapper .content, .menu-wrapper .sidebar {
 				padding: 10px 20px;
 				box-sizing: border-box; }
