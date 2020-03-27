@@ -22,7 +22,8 @@ $('document').ready(function($){
 });
 
 function bindEvents(){
-    $('.menu-post .shade').on('click', function(evt){ window.location.href = $(evt.target.parentElement).find('a').attr('href') });
+    $('.post').on('click', function(evt){ window.location.href = $(evt.target.parentElement).find('.nav a').attr('href'); });   //blog
+    $('.menu-post .shade').on('click', function(evt){ window.location.href = $(evt.target.parentElement).find('a').attr('href'); }); //home page
 }
 
 function init(body_classes){
